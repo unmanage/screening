@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Move the cost of the first screening from your company to your candidates by asking them to be reviewed first by us">
+    <meta name="keywords" content="hr, job, screening, application, review">
+
+		<title>Unmanage screening</title>
+
+	</head>
+
+	<body>
+		<form name="contact" method="POST" data-netlify="true">
+			<p>
+				<label>Your Name: <input type="text" name="name" /></label>   
+			</p>
+			<p>
+				<label>Your Email: <input type="email" name="email" /></label>
+			</p>
+			<p>
+				<label>Your Role: <select name="role[]" multiple>
+					<option value="leader">Leader</option>
+					<option value="follower">Follower</option>
+				</select></label>
+			</p>
+			<p>
+				<label>Message: <textarea name="message"></textarea></label>
+			</p>
+			<p>
+				<button type="submit">Send</button>
+			</p>
+		</form>
+    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="ZR4P9XQA75552">
+      <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+	</body>
+
+</html>
